@@ -39,17 +39,17 @@
                 letter-spacing: 3px;
         }
         nav ul :hover{
-                background-color:rgb(113, 180, 211);
+                background-color:rgb(200, 221, 231);
         }
         nav li a:hover {
-                color:white
+                font-style:oblique;
         }
     </style>
 </head>
 <body>
     <header>
         <center>   
-        <a href="index.html"><h1 style="font-weight:700;">Having Art</h1></a><br>
+        <a href="index.html"><h1 style="font-weight:700; text-shadow:1px 1px 0 #444" >Having Art</h1></a><br>
         <h12>[세상의 모든 명화]</h12>
         </center>
     </header>
@@ -63,17 +63,17 @@
     </nav>
     <section class="w3-left w3-container w3-margin-top w3-margin-bottom" style="max-width:700px" >
         <div class="w3-row">
-            <div class="youtube clip">
+            <div class="w3-row">
                 <article class="media" class="w3-row w3-large w3-margin-top"><h5>🧩영화 속 명화를 나의 집으로!</h5></article>
                 <hr>
                 <iframe width="645" height="365" src="https://www.youtube.com/embed/gN1xlR6kb4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <br>
-            <div class="Best">
-                <article class="music" class="calli w3-margin-top"><h5>👍Best Painting</h5></article>
+            <div id="Best">
+                <article class="w3-row" class="w3-margin-top"><h4>👍Best Seller</h4></article>
                 <hr>
                 <div class="w3-row">
-                    <img class="w3-col s3 w3-border w3-margin" src="./Painting/명화1.jpeg" alt="명화1" />
+                    <img class="w3-col s3 w3-border w3-margin" src="./Painting/명화1.jpeg" alt="명화1"/>
                     <img class="w3-col s3 w3-border w3-margin" src="./Painting/명화2.jpg" alt="명화2" style="width: 210px; height: 212px;"/>
                     <img class="w3-col s3 w3-border w3-margin" src="./Painting/명화3.jpeg" alt="명화3" style="width: 195px; height: 212px;"/>
                   </div>
@@ -93,8 +93,8 @@
         <form action="#" >
                           아이디  :<input class="w3-input1" type="text" name="id"/> <br/>
                           패스워드:<input class="w3-input1" type="password" name="pass"/> <br/>
-            <input class="w3-button w3-round-xlarge w3-sand" type="submit" value="로그인"/>
-            <input class="w3-button w3-round-xlarge w3-sand" type="reset" value="초기화"/><br/><br>
+            <input class="w3-btn w3-round-xlarge w3-light-gray" type="submit" value="로그인"/>
+            <input class="w3-btn w3-round-xlarge w3-light-gray" type="reset" value="초기화"/><br/><br>
         </form>
     </div>
     <div class="info">
@@ -118,30 +118,30 @@
        </div>
     </aside>
     
-    <div id="구매할인 안내">
+    <div id="Sale">
         <article class="package"> 
-            <h3 class="w3-large w3-container">🎁Discount event</h3>
+            <h3 class="w3-large w3-container">💰Discount event</h3>
             <hr>
-            <table border="1">
+            <table class="w3-table w3-bordered">
                 <tr>
-                    <th>일자</th>
-                    <th>내용</th>
-                    <th>세부사항</th>
+                    <th><b>작가-명화이름</b></th>
+                    <th>원가</th>
+                    <th>할인가</th>
                 </tr>
                 <tr>
-                    <td>현재</td>
-                    <td>동아대학교 경영정보학과 재학</td>
-                    <td>2학년</td>
+                    <td>고흐-해바라기ll</td>
+                    <td>35,700</td>
+                    <td>---> 25,000</td>
                 </tr>
                 <tr>
-                    <td>21.6.18~21.7.25</td>
-                    <td>부산광역시 주최 공모전 출전</td>
-                    <td>장려상 수상</td>
+                    <td>모네-수련</td>
+                    <td>36,500</td>
+                    <td>---> 23,000</td>
                 </tr>
                 <tr>
-                    <td>20.5.25~20.7.3</td>
-                    <td>어깨동무 활동참여</td>
-                    <td>멘티</td>
+                    <td>고갱-화병</td>
+                    <td>39,200</td>
+                    <td>---> 28,000</td>
                 </tr>
             </table>
         </article>
@@ -150,7 +150,7 @@
     <footer  class="w3-dark-grey w3-margin-top"  style="height:150px;">
         <div class="w3-row">
             <div class="w3-col s6 w3-container">
-                <h5 id=contact> Contact me</h5>
+                <h5 id="Having art"> Contact me</h5>
                 <ul>
                   <li>Phone: 010 7302 ****</li>
                   <li>Email: <a href="#">blackeye1108@naver.com</a></li>
