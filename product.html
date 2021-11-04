@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/w3.css">
-    <title>Document</title>
+    <title>Having Art_세상의 모든 명화</title>
     <script>
            function f(x){
                fact = 1;
@@ -55,10 +55,10 @@
         // data[i-행][0-열]
         // tr - 행/ th - 제목
 
-        let data = [["홍길동", "./images/photo1.jpg", 5000],
-                    ["이순신", "./images/photo2.jpg", 10000],
-                    ["성춘향", "./images/photo3.jpg", 15000],
-                    ["최동원", "./images/photo4.jpg", 5000]]
+        let data = [["빈센트 반 고흐","./product/p1.PNG", 21000],
+                    ["모네", "./product/p2.PNG", 19000],
+                    ["폴고갱", "./product/p3.PNG", 20000],
+                    ["피트 몬드리안", "./product/p4.PNG", 18000]]
 
            function tablePrint(){
             
@@ -93,8 +93,8 @@
             <a href="#" class="w3-bar-item w3-button">Link 2</a>
             <a href="#" class="w3-bar-item w3-button">Link 3</a>
         </div>
-        <div class="w3-black">
-            <button class="w3-button w3-black w3-xlarge" onclick="w3_open()">☰</button>
+        <div class="w3-light-blue">
+            <button class="w3-button w3-light-blue w3-xlarge" onclick="w3_open()">☰</button>
             <span class="w3-xlarge"> Seoyoung Site</span>
         </div>
 
@@ -109,7 +109,7 @@
             <button onclick="login();">Login</button><button onclick="cancel();">Cancel</button>
         </div>
         <div id="demo" class="w3-container">
-            <h1 class="w3-center" style="font-style: italic;"> Famous Painting</h1>
+            <h1 class="w3-center" style="font-style: italic;"><b>Famous Painting</b></h1>
             <div id="productList">
 
             </div>
@@ -117,12 +117,12 @@
         </div>
         <hr>
         <div class="w3-container">
-            <h3>  상품을 직접 등록해보세요!</h3>
+            <h3><b>상품을 직접 등록해보세요!</b></h3>
             저자명 : <input class="w3-input" type="text" name="" id="author"> <br>
             사진 : <input class="w3-input" type="file" name="" id="file"> <br>
             가격 : <input class="w3-input" type="text" name="" id="price"> <br>
-            <button class= "w3-button w3-blue" onclick="fileUpload();"> 상품등록</button>
-            <button class= "w3-button w3-blue" onclick="tablePrint();"> 상품리스트</button>
+            <button class= "w3-button w3-light-blue" onclick="fileUpload();"> 상품등록</button>
+            <button class= "w3-button w3-light-blue" onclick="tablePrint();"> 상품리스트</button>
       </div>
     
     </section>
