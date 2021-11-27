@@ -16,15 +16,6 @@
        document.getElementById("mySidebar").style.display = "none";
     }
 
-    const liStyle = function(){
-            const liList = document.getElementsByTagName("li");
-            console.log(liList)
-            for(let i=0; i<liList.length; i++){
-                liList[i].style.color = "blue";
-                liList[i].style.border;
-            }
-        }
-
     function funAppend(){
         const list = document.createElement("li");
         const work = document.getElementById("text").value;
@@ -108,7 +99,6 @@
         <li>대회활동하기</li>
     </ol>
     <input id ="text" type="text" maxlength="40" ><br>
-    <button onclick="liStyle();"> 스타일</button>  
     <button onclick="funAppend();"> 추가</button>
     <br>
 </section>
