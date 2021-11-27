@@ -60,38 +60,40 @@
     <button onclick="liStyle();"> 스타일</button>  
     <button onclick="funAppend();"> 추가</button>
     <br>
-    <h2> 장바구니 </h2>
-    <div id="cart" style="width: 700px; height: 250px; border: 1px solid gray;">
 
-    </div>
-    <h2> 상품리스트 </h2>
-<div id="list" style="width: 700px; height: 250px; border: 1px solid gray;">
-    <div id="img1" >
-        <img src="./cart/cart1.PNG" width="150" height="150">
-        <div>
-          <p>사과나무(구스타프 클림트)<br> &#8361;29000</p>
-          <button onclick="cartAppend('img1');">추가</button>
-          <button onclick="cartRemove('img1');">삭제</button>
+    
+    <h2 class="w3-text-black" style="text-shadow:3px 3px 0 rgb(182, 183, 184)"><b>상품리스트</b></h2>
+    <div id="list" style="width: 700px; height: 255px; border: 1px solid gray;">
+        <div id="img1" >
+            <img src="./cart/cart1.PNG" width="150" height="150">
+            <div>
+              <p>사과나무(구스타프 클림트)<br>&#8361;29,000</p>
+              <button onclick="cartAppend('img1');">추가</button>
+              <button onclick="cartRemove('img1');">삭제</button>
+            </div>
+        </div>
+    
+        <div id="img2">
+            <img src="./cart/cart2.PNG" width="150" height="150">
+            <div>
+              <p>화병 속의 꽃(르누아르)<br>&#8361;37,000</p>
+              <button onclick="cartAppend('img2');">추가</button>
+              <button onclick="cartRemove('img2');">삭제</button>
+            </div>
+        </div>
+    
+        <div id="img3">
+            <img src="./cart/cart3.PNG" width="150" height="150">
+            <div >
+            <p>이카루스(앙리 마티스)<br>&#8361;51,000</p>
+              <button onclick="cartAppend('img3');">추가</button>
+              <button onclick="cartRemove('img3');">삭제</button>
+            </div>
         </div>
     </div>
 
-    <div id="img2">
-        <img src="product02.jpg" width="150" height="150">
-        <div>
-          <p>가격:500000원/ 품명:PC</p>
-          <button onclick="cartAppend('img2');">추가</button>
-          <button onclick="cartRemove('img2');">삭제</button>
-        </div>
-    </div>
+    <h2 class="w3-text-black" style="text-shadow:3px 3px 0 rgb(182, 183, 184)"><b>장바구니</b></h2>
+    <div id="cart" style="width: 700px; height: 255px; border: 1px solid gray;"></div>
 
-    <div id="img3">
-        <img src="product03.jpg" width="150" height="150">
-        <div >
-        <p>가격:10000원/ 품명:옷</p>
-          <button onclick="cartAppend('img3');">추가</button>
-          <button onclick="cartRemove('img3');">삭제</button>
-        </div>
-    </div>
-</div>
 </body>
 </html>
