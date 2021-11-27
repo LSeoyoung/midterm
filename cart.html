@@ -17,6 +17,38 @@
     }
 
 
+    const liStyle = function(){
+            const liList = document.getElementsByTagName("li");
+            console.log(liList)
+            for(let i=0; i<liList.length; i++){
+                liList[i].style.color = "blue";
+            }
+        }
+
+    function funAppend(){
+        const list = document.createElement("li");
+        const work = document.getElementById("text").value;
+        const node = document.createTextNode(work);
+        list.appendChild(node);
+        const ele = document.getElementById("ol1");
+        ele.appendChild(list);
+    }
+
+    function cartAppend(e){
+        const x = document.getElementById(e);
+        const ele = document.getElementById("cart");
+        ele.appendChild(x);
+    }
+
+    function cartRemove(e){
+        const x = document.getElementById(e);
+        const list = document.getElementById("list");
+        const cart = document.getElementById("cart");
+        list.appendChild(x);
+        cart.removeChild(x);
+    }
+
+
 
 </script>
 
@@ -48,7 +80,7 @@
             color:white;
     }
 
-    #cart, #list{
+    #list, #cart{
             display: flex;
     }
     #img1, #img2, #img3, #img4, #img5{
@@ -123,8 +155,8 @@
             <img src="./cart/cart4.PNG" width="150" height="150">
             <div >
             <p>사과 바구니(폴세잔)<br>&#8361;36,100</p>
-              <button onclick="cartAppend('img3');">추가</button>
-              <button onclick="cartRemove('img3');">삭제</button>
+              <button onclick="cartAppend('img4');">추가</button>
+              <button onclick="cartRemove('img4');">삭제</button>
             </div>
         </div>
 
@@ -132,8 +164,8 @@
             <img src="./cart/cart5.PNG" width="150" height="150">
             <div >
             <p>길쌈(김홍도)<br>&#8361;38,300</p>
-              <button onclick="cartAppend('img3');">추가</button>
-              <button onclick="cartRemove('img3');">삭제</button>
+              <button onclick="cartAppend('img5');">추가</button>
+              <button onclick="cartRemove('img5');">삭제</button>
             </div>
         </div>
 
