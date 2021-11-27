@@ -48,6 +48,13 @@
             color:white;
     }
 
+    #cart, #list{
+            display: flex;
+    }
+    #img1, #img2, #img3, #img4, #img5{
+            flex: 3;
+    }
+
 </style>
 
 </head>
@@ -82,6 +89,60 @@
 </nav>
 
 <section>
+
+    <h4 class="w3-text-black" style="text-shadow:3px 3px 0 rgb(182, 183, 184)"><b>상품리스트</b></h4>
+    <div id="list" style="width: 100%; height: 255px; border: 1px solid gray;">
+        <div id="img1" >
+            <img src="./cart/cart1.PNG" width="150" height="150">
+            <div>
+              <p>사과나무(구스타프 클림트)<br>&#8361;29,000</p>
+              <button onclick="cartAppend('img1');">추가</button>
+              <button onclick="cartRemove('img1');">삭제</button>
+            </div>
+        </div>
+    
+        <div id="img2">
+            <img src="./cart/cart2.PNG" width="150" height="150">
+            <div>
+              <p>화병 속의 꽃(르누아르)<br>&#8361;37,000</p>
+              <button onclick="cartAppend('img2');">추가</button>
+              <button onclick="cartRemove('img2');">삭제</button>
+            </div>
+        </div>
+    
+        <div id="img3">
+            <img src="./cart/cart3.PNG" width="150" height="150">
+            <div >
+            <p>이카루스(앙리 마티스)<br>&#8361;51,000</p>
+              <button onclick="cartAppend('img3');">추가</button>
+              <button onclick="cartRemove('img3');">삭제</button>
+            </div>
+        </div>
+        
+        <div id="img4">
+            <img src="./cart/cart4.PNG" width="150" height="150">
+            <div >
+            <p>사과 바구니(폴세잔)<br>&#8361;36,100</p>
+              <button onclick="cartAppend('img3');">추가</button>
+              <button onclick="cartRemove('img3');">삭제</button>
+            </div>
+        </div>
+
+        <div id="img5">
+            <img src="./cart/cart5.PNG" width="150" height="150">
+            <div >
+            <p>길쌈(김홍도)<br>&#8361;38,300</p>
+              <button onclick="cartAppend('img3');">추가</button>
+              <button onclick="cartRemove('img3');">삭제</button>
+            </div>
+        </div>
+
+    </div>
+
+    <h4 class="w3-text-black" style="text-shadow:3px 3px 0 rgb(182, 183, 184)"><b>장바구니</b></h4>
+    <div id="cart" style="width: 100%; height: 255px; border: 1px solid gray;"></div>
+
+
 
 </section>
 
